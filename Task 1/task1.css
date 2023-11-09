@@ -1,0 +1,85 @@
+body{
+    margin-left: auto;
+    margin-right: auto;
+     margin-bottom: auto;
+     margin-top: auto;
+  }
+  
+  
+  * {
+      box-sizing: border-box;
+    }
+    
+    
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+    
+  
+    
+    .row::after {
+      content: "";
+      clear: both;
+      
+    }
+    
+  
+    
+    footer {
+      background-color: black;
+      text-align: center;
+      color: azure;
+      padding: 20px;
+    }
+    
+  
+    
+    @media screen and (min-width: 1024px) {
+      body{margin-left: 10%;
+    margin-right: 10%;}
+      
+    }
+  
+  
+  
+  
+  
+    @media screen and (width: 1024px) {
+    img, logo.svg {
+        height: 6%;
+        width: 6%;
+    }
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 800px) {
+    .column {
+        width: 50%;
+    }
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 480px) {
+    .column, .row::after {
+        width: 100%;
+    }
+  }
+  
+  
+  
+  p{
+      padding-left: 2%;
+      padding-right: 2%;
+  }
+  
+  
+  
+  .container{
+      padding-left: 3%;
+  }
